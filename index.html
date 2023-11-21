@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <META name="viewport" content="width=device-width, initial-scale =1.0">
+        <title>Her Coding</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/75b80bf662.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.PNG" class ="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                        
+    
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Software Engineer</p>
+                    <h1>Hello, my name is <br> <span>Surabhi Bhandari</span> <br></h1>
+                </div>
+            </div>
+        </div>
+      <!-------------about-------------------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.jpeg">
+
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title" >About Me</h1>
+                        <p>Hello everyone, I am a junior at the University of Texas at Arlington currently majoring with 
+                            Bachelor of Science in Software Engineering
+                             I aim to document my journey in the world of technology as I navigate the 
+                             exciting and dynamic field of software engineering. ​</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Development</span><br>Designing Web Interfaces</li>
+                                    <li><span>Database Design</span><br>Structured Querey Language</li>
+                                    <li><span>App Development</span><br>Building Andriod/iOS apps </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2023 - 2023</span><br>Software Engineering Virtual Experience at JPMorgan Chase & Co</li>
+                                    <li><span>2019-2022</span><br>Merchant Logistics at L'occitane </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2020 - Current</span></span><br>BS Software Enigneering at Univeristy of Texas at Arlington </li>
+                                    <li><span>2019</span><br>Trinity High School</li>
+
+
+                                </ul>
+                            </div>
+                            
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-----------------pprojects--------------->
+
+
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title" >My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Flower In The Wind</h3>
+                    <p>This simple code provides you a soothing visual of a flower gently breezing in the wind.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>Created a portfolio website using HTML, CSS, and JS. This website contains detailed information 
+                        about my education, skills, experiences, and my projects.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/work-3.png" >
+                <div class="layer">
+                    <h3>Library Management System GUI application </h3>
+                    <p>Developed a GUI application using Python and SQLite for a library management
+                         system with SQL queries to update and retrieve information from the database.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+            }
+        </script>
+    </body>
+</html>
+
+<!------------contact-------------->
+
+<div id="contact">
+    <div id="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>surabhi.bhandari1316@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>469-335-2991</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+           
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" classs="btn btn2">Submit</button>
+                </form> 
+              
+            </div>
+            
+        </div>
+    </div>
+</div>
