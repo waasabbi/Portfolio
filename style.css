@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 } 
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #130606;
     color: rgb(212, 195, 195);
@@ -299,4 +302,86 @@ form btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+/*--------------------css for small screen-----------------*/
+
+@media only screen and (max-width: 600px){
+   #header{
+    background-image:url(images/phone-background.png) ;
+   }
+   .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+   }
+   .header-text h1{
+    font-size: 30px;
+
+   }
+} 
+
+
+/*----Project List for See More-----*/
+
+/* Reset some basic elements to ensure consistency across browsers */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #005A9C;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section#Project.List {
+    padding: 20px;
+    background: #ffffff;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.Project.List h2 {
+    color: #d61b1b;
+}
+
+.Project.List p {
+    margin-bottom: 20px;
+}
+
+.Project.List a {
+    display: inline-block;
+    background: #0d72dd;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Adds spacing between links if more than one */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
 }
